@@ -3,7 +3,8 @@ import QuizCard from "./components/QuizCard";
 import PrizeTracker from "./components/PrizeTracker";
 import { questions } from "./data";
 import "./index.css";
-function App() {
+
+export default function Home() {
   const [gameQuestions, setGameQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -19,18 +20,6 @@ function App() {
     1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000,
     10000000,
   ];
-  useEffect(() => {
-    if (introPlayedRef.current) return
-
-    const timer = setTimeout(() => {
-      const introUtterance = new SpeechSynthesisUtterance("This web is developed by Sisan Bhattarai for fun. Enjoy it!")
-      introUtterance.rate = 0.9
-      window.speechSynthesis.speak(introUtterance)
-      introPlayedRef.current = true
-    }, 500)
-
-    return () => clearTimeout(timer)
-  }, [])
 
   useEffect(() => {
     if (introPlayedRef.current) return;
@@ -113,9 +102,9 @@ function App() {
       speechSequence.push({ text: "Correct!", rate: 1.0 });
     } else {
       speechSequence.push(
-        { text: `Incorrect.  correct answer  ${correctAnswer}.`, rate: 1.0 },
+        { text: `Incorrect. correct answer ${correctAnswer}.`, rate: 1.0 },
         {
-          text: "Don’t be sad! Even Google can’t help you now — better dial Sisan Bhattarai as soon as posible.",
+          text: "Don't be sad! Even Google can't help you now — better dial Sisan Bhattarai as soon as possible.",
           rate: 0.9,
         }
       );
@@ -196,7 +185,6 @@ function App() {
           </div>
           <div className="mt-8 text-center text-gray-300">
             <p>100+ questions from different categories</p>
-
             <p>Each game features 12 random questions</p>
           </div>
           <div className="mt-6 text-center">
@@ -243,5 +231,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
