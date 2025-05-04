@@ -3,7 +3,6 @@ import QuizCard from "./components/QuizCard";
 import PrizeTracker from "./components/PrizeTracker";
 import { questions } from "./data";
 import "./index.css";
-
 function App() {
   const [gameQuestions, setGameQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
