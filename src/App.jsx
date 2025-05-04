@@ -101,7 +101,7 @@ export default function Home() {
       speechSequence.push(
         { text: `Incorrect. correct answer ${correctAnswer}.`, rate: 1.0 },
         {
-          text: "Don't be sad! Even Google can't help you now — better dial Sisan Bhattarai as soon as possible.",
+          text: "Don't be sad! better dial Sisan Bhattarai as soon as possible.",
           rate: 0.9,
         }
       );
