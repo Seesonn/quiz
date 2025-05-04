@@ -19,6 +19,18 @@ function App() {
     1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000,
     10000000,
   ];
+  useEffect(() => {
+    if (introPlayedRef.current) return
+
+    const timer = setTimeout(() => {
+      const introUtterance = new SpeechSynthesisUtterance("This web is developed by Sisan Bhattarai for fun. Enjoy it!")
+      introUtterance.rate = 0.9
+      window.speechSynthesis.speak(introUtterance)
+      introPlayedRef.current = true
+    }, 500)
+
+    return () => clearTimeout(timer)
+  }, [])
 
   useEffect(() => {
     if (introPlayedRef.current) return;
