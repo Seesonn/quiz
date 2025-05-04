@@ -16,10 +16,7 @@ export default function Home() {
   const speechSynthesisRef = useRef(null);
   const introPlayedRef = useRef(false);
 
-  const prizeMoney = [
-    1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000,
-    10000000,
-  ];
+  const prizeMoney = [10, 25, 45, 70, 100, 140, 190, 260, 350, 480, 650, 1000];
 
   useEffect(() => {
     if (introPlayedRef.current) return;
@@ -170,10 +167,10 @@ export default function Home() {
       <div className="min-h-screen bg-gradient-to-b from-gray-900 via-blue-900 to-black flex flex-col items-center justify-center p-4">
         <div className="card-gradient rounded-2xl shadow-2xl overflow-hidden border border-sky-500 animate-pulse-blue p-8 max-w-2xl w-full">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-white glow-text">
-            Quiz Millionaire
+            Quiz 
           </h1>
           <p className="text-xl text-center mb-8 text-gray-200">
-            Answer 12 questions correctly to win 1 crore (10 million) rupees!
+            Answer 12 questions correctly to win 1 thousand (10 Hundered) rupees!
           </p>
           <div className="flex justify-center">
             <button
