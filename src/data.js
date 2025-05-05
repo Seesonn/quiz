@@ -1561,7 +1561,7 @@ export const questions = [
     question: "What is the purpose of the 'srcset' attribute in the <img> tag?",
     options: [
       "To provide alternative text for images",
-      "To specify multiple image src for different screen sizes",
+      "To specify multiple image sources for different screen sizes",
       "To set the image source",
       "To control image loading behavior",
     ],
