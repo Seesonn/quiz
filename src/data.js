@@ -975,20 +975,7 @@ export const questions = [
     ],
     correctAnswer: "Gene editing",
   },
-  {
-    id: 115,
-    category: "Advanced Science",
-    question:
-      "Which of the following is a correct statement about Heisenberg's Uncertainty Principle?",
-    options: [
-      "It states that energy is always conserved",
-      "It states that the position and momentum of a particle cannot be simultaneously measured with arbitrary precision",
-      "It describes the wave-particle duality of matter",
-      "It explains the phenomenon of quantum entanglement",
-    ],
-    correctAnswer:
-      "It states that the position and momentum of a particle cannot be simultaneously measured with arbitrary precision",
-  },
+  
 
   // Web Development
   {
@@ -1141,33 +1128,8 @@ export const questions = [
     ],
     correctAnswer: "Dynamic Typing Principle",
   },
-  {
-    id: 129,
-    category: "Software Development",
-    question: "What is the purpose of continuous integration (CI)?",
-    options: [
-      "To automatically deploy code to production",
-      "To integrate code changes frequently and detect issues early",
-      "To continuously monitor application performance",
-      "To integrate multiple programming languages",
-    ],
-    correctAnswer:
-      "To integrate code changes frequently and detect issues early",
-  },
-  {
-    id: 130,
-    category: "Software Development",
-    question:
-      "Which of the following is a correct statement about microservices architecture?",
-    options: [
-      "It is a monolithic architecture with multiple modules",
-      "It is an architecture where services are loosely coupled and independently deployable",
-      "It is only suitable for small applications",
-      "It requires all services to use the same programming language",
-    ],
-    correctAnswer:
-      "It is an architecture where services are loosely coupled and independently deployable",
-  },
+  
+  
 
   // IT Knowledge
   {
@@ -1445,31 +1407,8 @@ export const questions = [
     ],
     correctAnswer: "To analyze algorithm efficiency and scalability",
   },
-  {
-    id: 159,
-    category: "Software Development",
-    question:
-      "Which of the following is a correct statement about test-driven development (TDD)?",
-    options: [
-      "Tests are written after the code is implemented",
-      "Tests are written before the code is implemented",
-      "Tests are optional and only written for critical components",
-      "Tests are only written for user interfaces",
-    ],
-    correctAnswer: "Tests are written before the code is implemented",
-  },
-  {
-    id: 160,
-    category: "Software Development",
-    question: "What is the purpose of a design pattern?",
-    options: [
-      "To make code look aesthetically pleasing",
-      "To provide reusable solutions to common problems",
-      "To enforce a specific programming language",
-      "To replace algorithms",
-    ],
-    correctAnswer: "To provide reusable solutions to common problems",
-  },
+ 
+ 
 
   // IT Knowledge
   {
@@ -1574,20 +1513,7 @@ export const questions = [
     correctAnswer: "Encode proteins for oxidative phosphorylation",
   },
   {
-    id: 169,
-    category: "Advanced Science",
-    question:
-      "Which of the following is a correct statement about quantum entanglement?",
-    options: [
-      "It allows faster-than-light communication",
-      "It describes the state where quantum particles become interconnected and the state of one instantly influences the other regardless of distance",
-      "It explains the wave-particle duality of matter",
-      "It is the basis for quantum tunneling",
-    ],
-    correctAnswer:
-      "It describes the state where quantum particles become interconnected and the state of one instantly influences the other regardless of distance",
-  },
-  {
+ 
     id: 170,
     category: "Advanced Science",
     question:
@@ -1635,7 +1561,7 @@ export const questions = [
     question: "What is the purpose of the 'srcset' attribute in the <img> tag?",
     options: [
       "To provide alternative text for images",
-      "To specify multiple image sources for different screen sizes",
+      "To specify multiple image src for different screen sizes",
       "To set the image source",
       "To control image loading behavior",
     ],
@@ -1657,20 +1583,7 @@ export const questions = [
   },
 
   // AI and Machine Learning
-  {
-    id: 176,
-    category: "AI and Machine Learning",
-    question:
-      "Which of the following is a correct statement about transfer learning?",
-    options: [
-      "It involves training a model from scratch for each new task",
-      "It involves transferring knowledge from one task to another",
-      "It is only applicable to computer vision tasks",
-      "It requires more data than traditional learning approaches",
-    ],
-    correctAnswer:
-      "It involves transferring knowledge from one task to another",
-  },
+  
   {
     id: 177,
     category: "AI and Machine Learning",
@@ -1861,45 +1774,9 @@ export const questions = [
   },
 
   // Web Development
-  {
-    id: 196,
-    category: "Web Development",
-    question:
-      "What is the purpose of the 'defer' attribute in the <script> tag?",
-    options: [
-      "To defer script execution until the page has finished parsing",
-      "To defer script loading until the page has finished loading",
-      "To defer script execution until a specific event occurs",
-      "To defer script loading until a user interaction",
-    ],
-    correctAnswer:
-      "To defer script execution until the page has finished parsing",
-  },
-  {
-    id: 197,
-    category: "Web Development",
-    question: "Which of the following is a correct statement about WebSockets?",
-    options: [
-      "They provide a one-way communication channel from client to server",
-      "They provide a one-way communication channel from server to client",
-      "They provide a two-way communication channel between client and server",
-      "They are used to store data on the client side",
-    ],
-    correctAnswer:
-      "They provide a two-way communication channel between client and server",
-  },
-  {
-    id: 198,
-    category: "Web Development",
-    question: "What is the purpose of the 'preload' resource hint in HTML?",
-    options: [
-      "To preload resources that will be needed later",
-      "To prefetch resources that might be needed later",
-      "To prerender pages that might be visited later",
-      "To preconnect to origins that will be used later",
-    ],
-    correctAnswer: "To preload resources that will be needed later",
-  },
+  
+  
+  
   {
     id: 199,
     category: "Web Development",
